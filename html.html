@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="theme-color" content="#fff2bd" />
+  <title>Untuk Ayah</title>
+  <link rel="stylesheet" href="css.css" />
+</head>
+<body>
+  <div class="kotak-utama">
+
+    <!-- halaman 1 -->
+    <div class="halaman aktif" id="hal1">
+      <div class="bunga-jatuh" aria-hidden="true">
+        <span>&#x1F33C;</span><span>&#x1F319;</span><span>&#x1F33C;</span>
+        <span>&#x1F319;</span><span>&#x1F33C;</span><span>&#x1F319;</span>
+        <span>&#x1F33C;</span><span>&#x1F319;</span><span>&#x1F33C;</span>
+        <span>&#x1F319;</span><span>&#x1F33C;</span><span>&#x1F319;</span>
+      </div>
+      <div class="isi">
+        <div class="kartu-nama">
+          <div class="bunga">&#x1F33C;</div>
+          <h1>Hari Ayah Nasional</h1>
+          <p>ketikan namamu untuk memulai</p>
+          <form id="formNama">
+            <input id="inputNama" class="kotak-input" autocomplete="off" placeholder="Tulis namamu di sini..." />
+            <div class="peringatan" id="pesanSalah">Nama tidak sesuai</div>
+            <button class="tombol" type="submit">Mulai</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- halaman 2 -->
+    <div class="halaman halaman2" id="hal2">
+      <video class="video-penuh" autoplay muted loop playsinline>
+        <source src="media/ayah-video.mp4" type="video/mp4" />
+      </video>
+      <div class="bayangan"></div>
+      <div class="teks-ucapan">Halo Edih Supriadi,<br />Selamat Hari Ayah Nasional..<br />Ini Bunga untukmu</div>
+      <div class="wrap-tombol-bawah">
+        <button class="tombol" data-tuju="hal3">selanjutnya</button>
+      </div>
+    </div>
+
+    <!-- halaman 3 -->
+    <div class="halaman halaman3" id="hal3">
+      <div class="isi">
+        <h1 class="judul-memori">Memori</h1>
+        <p>Klik kadonya untuk membuka foto</p>
+        <div class="kotak-foto" id="kotakFoto"></div>
+        <button class="tombol" data-tuju="hal4">selanjutnya</button>
+        <div class="keterangan">Jujur cuma ketemu dua foto doang yang ada ayahnya :'(</div>
+      </div>
+    </div>
+
+    <!-- halaman 4 - pilih kartu -->
+    <div class="halaman halaman4" id="hal4">
+      <div class="isi">
+        <h2 class="judul-surat-hal4">Ucapan</h2>
+        <p class="keterangan-kartu">Ketuk kartunya untuk membuka pesan</p>
+        <div class="kotak-kartu-surat">
+
+          <!-- kartu Tia -->
+          <button class="kartu-pilih kartu-pilih-tia" data-tuju="hal4a">
+            <div class="nama-anak">Tia</div>
+            <div class="ikon-kartu">&#x1F33C;</div>
+          </button>
+
+          <!-- kartu Mora -->
+          <button class="kartu-pilih kartu-pilih-mora" data-tuju="hal4b">
+            <div class="nama-anak">Mora</div>
+            <div class="ikon-kartu">&#x1F319;</div>
+          </button>
+
+        </div>
+        <div class="baris-tombol">
+          <button class="tombol tombol-putih" data-tuju="hal3">sebelumnya</button>
+          <button class="tombol" data-tuju="hal5">selanjutnya</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- halaman 4a - pesan Tia -->
+    <div class="halaman halaman4a" id="hal4a">
+      <div class="isi">
+        <div class="kotak-teks-surat kotak-teks-tia">
+          <div class="header-surat">
+            <span>&#x1F33C;</span>
+            <h2>Dari Tia</h2>
+          </div>
+          <p>Kurang lebih udah 24thn ayah jadi "Ayah" ya hehe. 
+            Jujur aku ga begitu inget sebagian besar kenangan kita (ya karna aku sama Mora lebih lama tinggal di Bandar Lampung sih). 
+            tapi untungnya masih ada foto sebelumnya yang ngingetin kalo ayah ga sejauh itu. 
+            Rasa suka kita soal Jepang juga turun dari ayah. Terus juga baru-baru ini kita kontak-kontakan lagi. 
+            Aku seneng banget, tapi awal-awalnya aku masih gengsi/dendam lah sama ayah hehe (kenapa ga dari dulu gitu loh). 
+            Tapi ya sudahlah, yang terjadi biarkan terjadi..</p>
+          <p>Intinya aku mau bilang makasih ke ayah karna udah jadi ayah aku, udah jadi cinta pertamaku, luka pertamaku,
+            makasih ya yah udah reach out aku untuk deket lagi sama aku dan Mora. Sebenernya banyak yang mau aku omongin/ceritain ke ayah.. 
+            cuma ga cukup kalo disini wkwkw</p>
+          <p>Aku bangga punya ayah kaya ayah. Tetep jadi ayah kita dan anak-anak ayah yang lain ya. yang sudah berlalu jadikan pelajaran 
+            buat kita kedepannya yaa.</p>
+        </div>
+        <button class="tombol tombol-putih" data-tuju="hal4">kembali</button>
+      </div>
+    </div>
+
+    <!-- halaman 4b - pesan Mora -->
+    <div class="halaman halaman4b" id="hal4b">
+      <div class="isi">
+        <div class="kotak-teks-surat kotak-teks-mora">
+          <div class="header-surat">
+            <span>&#x1F319;</span>
+            <h2>Dari Mora</h2>
+          </div>
+          <p>Ayah, maaf ya aku masih egois. terutama yang soal kakak ga ku jemput. 
+            Aku juga minta maaf belum bisa bales budi ke ayah..</p>
+          <p>Makasih ya ayah udah ngebantu aku sampai detik ini, makasih udah datang ke kehidupan aku, 
+            keberadaan ayah berharga buat aku.</p>
+        </div>
+        <button class="tombol tombol-putih" data-tuju="hal4">kembali</button>
+      </div>
+    </div>
+
+    <!-- halaman 5 -->
+    <div class="halaman halaman5" id="hal5">
+      <div class="isi">
+        <div class="jejeran-polaroid">
+          <button class="polaroid miring-kiri" onclick="bukaFoto('media/tia-mora-1.jpg')">
+            <img src="media/tia-mora-1.jpg" alt="Tia dan Mora" />
+          </button>
+          <button class="polaroid miring-kanan" onclick="bukaFoto('media/tia-mora-2.jpg')">
+            <img src="media/tia-mora-2.jpg" alt="Tia dan Mora" />
+          </button>
+          <button class="polaroid miring-kiri2" onclick="bukaFoto('media/tia-mora-3.jpg')">
+            <img src="media/tia-mora-3.jpg" alt="Tia dan Mora" />
+          </button>
+          <button class="polaroid miring-kanan2" onclick="bukaFoto('media/tia-mora-4.jpg')">
+            <img src="media/tia-mora-4.jpg" alt="Tia dan Mora" />
+          </button>
+        </div>
+        <div class="kotak-penutup">
+          <h1>Terima kasih sudah menjadi ayah yang hebat, sabar, dan kuat.</h1>
+        </div>
+        <div class="kotak-penutup">
+          <p class="ttd">Dari Anak pertama dan keduamu,<br />Tia &amp; Mora</p>
+        </div>
+        <button class="tombol tombol-putih" data-tuju="hal1">Mulai dari awal lagi</button>
+      </div>
+    </div>
+
+    <!-- popup foto -->
+    <div class="popup" id="popupFoto">
+      <button class="tombol-tutup" id="btnTutup">&#x00D7;</button>
+      <img id="fotoTampil" alt="foto kenangan" />
+    </div>
+
+    <audio id="musik" src="media/lilin-kecil.mpeg" loop preload="none"></audio>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>
